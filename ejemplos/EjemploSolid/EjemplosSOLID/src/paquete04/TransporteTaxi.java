@@ -10,22 +10,25 @@ package paquete04;
  * @author reroes
  */
 public class TransporteTaxi extends Transporte {
+
     private String cooperativaTaxi;
-    
-    
-    public void establecerCooperativaTaxi(String n){
+
+    public void establecerCooperativaTaxi(String n) {
         cooperativaTaxi = n;
     }
-    
-    
-    public void establecerTarifa(){
-        tarifa = 0.40 + (0.40*0.5);
+
+    public void establecerTarifa() {
+        tarifa = 0.40 + (0.40 * 0.5);
     }
-    
-    
-    public String obtenerCooperativaTaxi(){
+
+    public String obtenerCooperativaTaxi() {
         return cooperativaTaxi;
     }
-        
-    
+
+    public String toString() {
+        String cadena = String.format("Cooperativa de taxis %s: $%.2f\n",
+                cooperativaTaxi,
+                tarifa);
+        return cadena;
+    }
 }
