@@ -9,8 +9,9 @@ package paquete06;
  */
 public class Principal {
     public static void main(String[] args) {
+        Tarjeta tarjeta = new Tarjeta("Banco de Loja",1500);
         
-        MayorEdad representante = new MayorEdad("José", "Visa");
+        MayorEdad representante = new MayorEdad("José", tarjeta);
         
         MenorEdad menor = new MenorEdad("Felipe", representante);
         

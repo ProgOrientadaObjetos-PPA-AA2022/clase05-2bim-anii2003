@@ -9,8 +9,7 @@ package paquete06;
  *
  * @author reroes
  */
-public class MenorEdad extends Persona{
-    
+public class MenorEdad extends Persona{    
     private MayorEdad representante;
            
     public MenorEdad(String n, MayorEdad repre){
